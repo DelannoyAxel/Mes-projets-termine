@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+header h1 {
+  color: red;
+}
+.recherche {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#series {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-left: 40px;
+}
+#series .show-card {
+  width: 15vw;
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#series .show-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  color: white;
+}
+#series .show-card h2 {
+  margin: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+}
+#series .show-card p {
+  margin: 0 10px 10px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+#series .show-card button {
+  width: 100%;
+  padding: 8px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+}
+.show-card:hover {
+  transform: scale(1.05);
+}
+.show-card button:hover {
+  background-color: #ff0a16;
+}
