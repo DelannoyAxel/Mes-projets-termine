@@ -11,9 +11,17 @@ header {
     justify-content: center;
     align-items: center;
     background-color: black;
+    flex-direction: column;
 
     h1 {
+        color: whitesmoke;
+        font-size: 1.2rem;
+        font-family: "Roboto", sans-serif;
+    }
+
+    h2 {
         color: red;
+        font-size: 3rem;
     }
 }
 
@@ -30,10 +38,11 @@ header {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: flex-start;
-    margin-left: 40px;    
+    margin-left: 40px;
 
     .show-card {
         width: 15vw;
+        min-width: 200px;
         background-color: #222;
         border-radius: 10px;
         overflow: hidden;

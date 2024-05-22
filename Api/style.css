@@ -10,9 +10,16 @@ header {
   justify-content: center;
   align-items: center;
   background-color: black;
+  flex-direction: column;
 }
 header h1 {
+  color: whitesmoke;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+header h2 {
   color: red;
+  font-size: 3rem;
 }
 .recherche {
   width: 100vw;
@@ -30,6 +37,7 @@ header h1 {
 }
 #series .show-card {
   width: 15vw;
+  min-width: 200px;
   background-color: #222;
   border-radius: 10px;
   overflow: hidden;
